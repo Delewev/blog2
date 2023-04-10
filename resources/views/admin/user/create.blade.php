@@ -10,13 +10,13 @@
                 <div class="row mb-2">
                     <div class="col-sm-6">
                         <h1 class="m-0">
-                            Добавление Пользователя
+                          Пользователя
                         </h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Dashboard v1</li>
+                            <li class="breadcrumb-item"><a href="{{route('admin.user.index')}}">Главная</a></li>
+                            <li class="breadcrumb-item active">Пользователь</li>
                         </ol>
                     </div><!-- /.col -->
                 </div><!-- /.row -->
@@ -43,12 +43,6 @@
                                 <input type="text" class="form-control" name="email" placeholder="Email">
                                 @error('email')
                                 <div class="text-danger">{{$message}}</div>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="password" placeholder="Пароль">
-                                @error('password')
-                                <div class="text-danger">Это поле необходимо заполнить</div>
                                 @enderror
                             </div>
                             <div class="form-group w-50">
